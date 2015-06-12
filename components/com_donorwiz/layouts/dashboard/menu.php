@@ -3,7 +3,7 @@
 defined('_JEXEC') or die;
 ?>
 
-<div class="uk-panel uk-panel-dark uk-animation-slide-top">
+<div class="uk-panel uk-panel-dark">
 
 	<?php echo JLayoutHelper::render( 'dashboard.user', array ( ) , JPATH_ROOT .'/components/com_donorwiz/layouts' , null ); ?>
 
