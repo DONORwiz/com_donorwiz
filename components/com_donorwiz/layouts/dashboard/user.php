@@ -44,7 +44,7 @@ $DisplayName = $user->getDisplayName();
 		<a class="uk-button uk-button-large uk-button-contrast uk-border-circle uk-margin-small-left uk-margin-small-right" href="<?php echo JRoute::_('profile/message/inbox');?>" title="<?php echo JText::_('COM_DONORWIZ_DASHBOARD_SEND_MESSAGE');?>" data-uk-tooltip>
 			<i class="uk-icon-envelope-o"></i>
 		</a>
-		<a class="uk-button uk-button-large uk-button-contrast uk-border-circle uk-margin-small-left uk-margin-small-right" href="<?php echo JRoute::_('index.php?option=com_donorwiz&view=login&Itemid=314&return='.base64_encode(JFactory::getURI()->toString()).'&'. JSession::getFormToken() .'=1');?>" title="<?php echo JText::_('COM_DONORWIZ_LOGOUT_UPPERCASE');?>" data-uk-tooltip>
+		<a class="uk-button uk-button-large uk-button-contrast uk-border-circle uk-margin-small-left uk-margin-small-right" href="<?php echo JRoute::_('index.php?option=com_donorwiz&view=login&Itemid=314&return='.base64_encode( JURI::base() ) );?>" title="<?php echo JText::_('COM_DONORWIZ_LOGOUT_UPPERCASE');?>" data-uk-tooltip>
 			<i class="uk-icon-power-off"></i>
 		</a>
 	</div>

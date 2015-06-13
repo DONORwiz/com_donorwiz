@@ -31,8 +31,8 @@ $name = $user->getDisplayName();
 
 		<hr class="uk-article-divider">
 		
-		<div class="uk-thumbnail uk-margin">
-			<img src="<?php echo $avatarUrl;?>" alt="<?php echo $name;?>">
+		<div class="uk-margin">
+			<img class="uk-thumbnail uk-border-circle" src="<?php echo $avatarUrl;?>" alt="<?php echo $name;?>">
 		</div>
 			
 		<form class="uk-form uk-form-horizontal" action="<?php echo JRoute::_('index.php', true); ?>" method="post" data-uk-grid-margin>
