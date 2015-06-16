@@ -43,7 +43,7 @@ if ( $canExport )
 	<?php echo JText::_('COM_DONORWIZ_DASHBOARD_EXPORT'); ?>
 </a>
 
-<form id="<?php echo $component;?>-export-form" class="uk-hidden" action="<?php echo JURI::Base();?>index.php?option=com_donorwiz&task=export.csv" method="post">
+<form id="<?php echo $component;?>-export-form" class="uk-hidden" action="<?php echo JURI::Base();?>index.php?option=com_donorwiz&task=export.xls" method="post">
     <input name="<?php echo JSession::getFormToken();?>" value="1"/>
     <input name="items" value="<?php echo htmlspecialchars ( json_encode(  $items ) );?>"/>
     <input name="fields" value="<?php echo $fields; ?>"/>
