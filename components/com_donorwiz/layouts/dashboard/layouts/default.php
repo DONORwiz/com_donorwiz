@@ -15,12 +15,18 @@ $isGuest = JFactory::getUser()->get('guest');
 		
 		<div class="uk-grid" data-uk-grid-margin="">
 			
-			<div class="uk-width-1-1">
-			<?php echo JLayoutHelper::render( 'dashboard.layouts.default.widgets-top', array () , JPATH_ROOT .'/components/com_donorwiz/layouts' , null ); ?>
+			<div class="uk-width-1-1 uk-hidden-large uk-hidden-medium">
+				<a href="#vertical-menu" class="uk-button uk-button-large uk-button-blank uk-width-1-1" data-uk-smooth-scroll><i class="uk-icon-chevron-down uk-margin-right"></i>MENU</a>
 			</div>
+			
 			<div class="uk-width-1-1">
-			<?php echo JLayoutHelper::render( 'dashboard.layouts.default.widgets-middle', array () , JPATH_ROOT .'/components/com_donorwiz/layouts' , null ); ?>
+				<?php echo JLayoutHelper::render( 'dashboard.layouts.default.widgets-top', array () , JPATH_ROOT .'/components/com_donorwiz/layouts' , null ); ?>
 			</div>
+			
+			<div class="uk-width-1-1">
+				<?php echo JLayoutHelper::render( 'dashboard.layouts.default.widgets-middle', array () , JPATH_ROOT .'/components/com_donorwiz/layouts' , null ); ?>
+			</div>
+		
 		</div>
 
 	</div>
